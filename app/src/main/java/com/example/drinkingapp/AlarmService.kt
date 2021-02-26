@@ -12,10 +12,8 @@ import androidx.core.app.NotificationManagerCompat
 class AlarmService : Service() {
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
-        val title = intent.getStringExtra("title") as String
-        val message = intent.getStringExtra("message") as String
         Toast.makeText(this, "alarm triggered", Toast.LENGTH_SHORT).show()
-        sendNotification(title, message, this)
+        sendNotification("Drink", "Drink, mf, drink!", this)
         return super.onStartCommand(intent, flags, startId)
     }
 

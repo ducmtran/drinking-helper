@@ -1,19 +1,12 @@
 package com.example.drinkingapp
 
-import android.app.NotificationChannel
 import android.app.NotificationManager
-import android.content.ClipDescription
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                    .setAction("Action", null).show()
 
-            ReminderInfoFragment(applicationContext).show(supportFragmentManager, "message_input")
+            TimePickerFragment(applicationContext).show(supportFragmentManager, "message_input")
         }
     }
 

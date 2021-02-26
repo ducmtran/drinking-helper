@@ -16,6 +16,8 @@
     <string name="reminder_message">Message</string>
     <string name="confirm">Confirm</string>
     <string name="cancel">Cancel</string>
+    <string name="reminder_state">REMINDER_STATE</string>
+    <string name="end_time">end_time</string>
     <!--    Integers-->
     <integer name="alarm_intent_request_code">1</integer>
 
